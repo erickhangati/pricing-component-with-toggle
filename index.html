@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./src/images/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/src/css/main.scss" />
+    <script type="module" src="/src/script.js"></script>
+
+    <title>Frontend Mentor | [Challenge Name Here]</title>
+  </head>
+  <body>
+    <section class="pricing">
+      <h2 class="pricing__heading heading heading--primary">Our Pricing</h2>
+      <div class="pricing-options">
+        <span class="pricing-options__text">Annually</span>
+        <div class="pricing-toggle">
+          <div class="pricing-toggle__button"></div>
+        </div>
+        <span class="pricing-options__text">Monthly</span>
+      </div>
+      <div class="pricing-container pricing-monthly">
+        <div class="pricing-tables pricing-basic pricing-prices">
+          <h2 class="pricing-basic__heading heading heading--secondary">
+            Basic
+          </h2>
+          <p class="pricing-basic__price pricing-price">&dollar;19.99</p>
+          <ul class="pricing-basic__features pricing-list">
+            <li class="pricing-list__item">500 GB Storage</li>
+            <li class="pricing-list__item">2 Users Allowed</li>
+            <li class="pricing-list__item">Send up to 3 GB</li>
+          </ul>
+          <button class="pricing-basic__button btn btn--dark">
+            Learn More
+          </button>
+        </div>
+
+        <div class="pricing-tables pricing-professional pricing-prices">
+          <h2 class="pricing-professional__heading heading heading--secondary">
+            Professional
+          </h2>
+          <p class="pricing-professional__price pricing-price">&dollar;24.99</p>
+          <ul class="pricing-professional__features pricing-list">
+            <li class="pricing-list__item">1 TB Storage</li>
+            <li class="pricing-list__item">5 Users Allowed</li>
+            <li class="pricing-list__item">Send up to 10 GB</li>
+          </ul>
+          <button class="pricing-professional__button btn btn--light">
+            Learn More
+          </button>
+        </div>
+
+        <div class="pricing-tables pricing-masters pricing-prices">
+          <h2 class="pricing-masters__heading heading heading--secondary">
+            Masters
+          </h2>
+          <p class="pricing-masters__price pricing-price">&dollar;39.99</p>
+          <ul class="pricing-masters__features pricing-list">
+            <li class="pricing-list__item">2 GB Storage</li>
+            <li class="pricing-list__item">10 Users Allowed</li>
+            <li class="pricing-list__item">Send up to 20 GB</li>
+          </ul>
+          <button class="pricing-masters__button btn btn--dark">
+            Learn More
+          </button>
+        </div>
+      </div>
+
+      <div class="pricing-container pricing-annually hidden">
+        <div class="pricing-tables pricing-basic pricing-prices">
+          <h2 class="pricing-basic__heading heading heading--secondary">
+            Basic
+          </h2>
+          <p class="pricing-basic__price pricing-price">&dollar;119.99</p>
+          <ul class="pricing-basic__features pricing-list">
+            <li class="pricing-list__item">500 GB Storage</li>
+            <li class="pricing-list__item">2 Users Allowed</li>
+            <li class="pricing-list__item">Send up to 3 GB</li>
+          </ul>
+          <button class="pricing-basic__button btn btn--dark">
+            Learn More
+          </button>
+        </div>
+
+        <div class="pricing-tables pricing-professional pricing-prices">
+          <h2 class="pricing-professional__heading heading heading--secondary">
+            Professional
+          </h2>
+          <p class="pricing-professional__price pricing-price">
+            &dollar;249.99
+          </p>
+          <ul class="pricing-professional__features pricing-list">
+            <li class="pricing-list__item">1 TB Storage</li>
+            <li class="pricing-list__item">5 Users Allowed</li>
+            <li class="pricing-list__item">Send up to 10 GB</li>
+          </ul>
+          <button class="pricing-professional__button btn btn--light">
+            Learn More
+          </button>
+        </div>
+
+        <div class="pricing-tables pricing-masters pricing-prices">
+          <h2 class="pricing-masters__heading heading heading--secondary">
+            Masters
+          </h2>
+          <p class="pricing-masters__price pricing-price">&dollar;399.99</p>
+          <ul class="pricing-masters__features pricing-list">
+            <li class="pricing-list__item">2 GB Storage</li>
+            <li class="pricing-list__item">10 Users Allowed</li>
+            <li class="pricing-list__item">Send up to 20 GB</li>
+          </ul>
+          <button class="pricing-masters__button btn btn--dark">
+            Learn More
+          </button>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,2 @@
+const e=document.querySelector(".pricing-toggle"),t=document.querySelector(".pricing-toggle__button"),c=[document.querySelector(".pricing-monthly"),document.querySelector(".pricing-annually")];e.addEventListener("click",(function(){this.classList.toggle("pricing-toggle--clicked"),t.classList.toggle("pricing-toggle__button--clicked"),c.forEach((e=>e.classList.toggle("hidden")))}));
+//# sourceMappingURL=index.d9b1c2b5.js.map

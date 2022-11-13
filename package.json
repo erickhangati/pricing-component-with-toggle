@@ -1,0 +1,21 @@
+{
+  "name": "pricing-component-toggle",
+  "version": "1.0.0",
+  "description": "Pricing component with toggle coding challenge",
+  "default": "index.html",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html --dist-dir ./dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "core-js": "^3.26.0",
+    "parcel": "^2.8.0",
+    "regenerator-runtime": "^0.13.10"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.7.0"
+  }
+}

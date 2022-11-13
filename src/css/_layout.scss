@@ -1,0 +1,145 @@
+.pricing {
+  width: 100%;
+  padding: 10rem 0;
+  background-color: var(--very-light-grayish-blue);
+  background-image: url("/src/images/bg-top.svg"),
+    url("/src/images/bg-bottom.svg");
+  background-position: top right, bottom left;
+  background-repeat: no-repeat, no-repeat;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 4rem;
+
+  &-container {
+    width: 80%;
+
+    display: flex;
+    justify-content: center;
+
+    @include respond(tab-pot) {
+      flex-direction: column;
+      gap: 4rem;
+      align-items: center;
+    }
+  }
+
+  &-tables {
+    text-align: center;
+    padding: 4rem;
+    background-color: var(--very-light-grayish-blue);
+    box-shadow: 0 1rem 3rem 1rem rgba(0, 0, 0, 0.1);
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    width: 35rem;
+
+    @include respond(tab-pot) {
+      width: 60%;
+    }
+
+    @include respond(phone-lg) {
+      width: 80%;
+    }
+  }
+
+  &-options {
+    display: flex;
+    gap: 2.4rem;
+    align-items: center;
+
+    &__text {
+      font-size: 1.4rem;
+      color: var(--light-grayish-blue);
+    }
+  }
+
+  &-toggle {
+    width: 5rem;
+    height: 3rem;
+    background-image: var(--linear-gradient-gray);
+    border-radius: 30px;
+    position: relative;
+    cursor: pointer;
+
+    &--clicked {
+      background-image: var(--linear-gradient);
+    }
+
+    &__button {
+      position: absolute;
+      top: 0.3rem;
+      left: 0.3rem;
+      width: 2.4rem;
+      height: 2.4rem;
+      background-color: var(--very-light-grayish-blue);
+      border-radius: 50%;
+      transition: all 0.3s;
+
+      &--clicked {
+        left: 2.3rem;
+      }
+    }
+  }
+
+  &-list {
+    list-style: none;
+
+    &__item {
+      padding: 1.4rem 0;
+      font-size: 1.4rem;
+      color: var(--grayish-blue);
+
+      &:not(:last-child) {
+        border-bottom: 1px solid #ebebeb;
+      }
+    }
+  }
+
+  &-price {
+    font-size: 6.4rem;
+    color: var(--dark-grayish-blue);
+
+    @include respond(tab-land) {
+      font-size: 5.6rem;
+    }
+
+    @include respond(tab-pot) {
+      font-size: 4rem;
+    }
+
+    @include respond(phone-lg) {
+      font-size: 3.2rem;
+    }
+  }
+
+  &-basic {
+    border-radius: 0.8rem 0 0 0.8rem;
+    align-self: center;
+  }
+
+  &-professional {
+    border-radius: 0.8rem;
+    padding: 6rem 4rem;
+    background-image: var(--linear-gradient);
+
+    &__heading,
+    &__price,
+    &__features li {
+      color: var(--very-light-grayish-blue);
+    }
+
+    &__features li:not(:last-child) {
+      border-bottom: 1px solid var(--light-grayish-blue);
+    }
+  }
+
+  &-masters {
+    border-radius: 0 0.8rem 0.8rem 0;
+    align-self: center;
+  }
+}
