@@ -12,6 +12,6 @@ This is a challenge from Frontend Mentor. We were supposed to build a Pricing Co
 2. CSS (Grid, Flexbox, SASS)
 3. JavaScript
 
-## Live link to the QR code component
+## Live link to the Pricing Component with Toggle
 
 [https://eric-pricing-component-with-toggle.netlify.app/](https://eric-pricing-component-with-toggle.netlify.app/ "Frontend Mentor Challenge - Pricing Component with Toggle")
